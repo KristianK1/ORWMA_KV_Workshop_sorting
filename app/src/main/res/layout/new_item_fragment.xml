@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/tw_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:text="Ime:"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tw_name"
+        android:textSize="15dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="30dp"
+        android:hint="Unesite ime komponente:"
+        />
+
+
+
+
+    <TextView
+        android:id="@+id/tw_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="100dp"
+        android:text="Grupa:"
+        android:textSize="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tw_group"
+        android:layout_toRightOf="@+id/tw_group"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/tw_group"
+
+        android:textSize="15dp"
+        android:hint="Unesite grupu:"/>
+
+
+
+    <TextView
+        android:id="@+id/tw_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="210dp"
+        android:text="Mjesto:"
+        android:textSize="20dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinner_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tw_location"
+        android:layout_toRightOf="@+id/tw_location"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/et_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_toRightOf="@id/tw_location"
+        android:layout_marginRight="30dp"
+        android:textSize="15dp"
+        android:hint="Unesite Mjesto:"/>
+
+
+
+    <TextView
+        android:id="@+id/tw_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="320dp"
+        android:text="Link:"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/et_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tw_link"
+        android:textSize="15dp"
+        android:layout_marginTop="312dp"
+        android:layout_marginRight="30dp"
+        android:hint="Upišite Link na trgovinu:"
+        />
+
+
+
+    <TextView
+        android:id="@+id/tw_quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="400dp"
+        android:text="Količina:"
+        android:textSize="20dp"
+        />
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tw_quantity"
+        android:textSize="15dp"
+        android:layout_marginTop="393dp"
+        android:layout_marginRight="30dp"
+        android:hint="Unesite količinu:"
+        />
+
+
+
+    <Button
+        android:id="@+id/bt_add_new"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Unesite novu komponentu"
+        android:onClick="add_new_item_online"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"/>
+</RelativeLayout>
